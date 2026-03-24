@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   api:
     build: .
@@ -7,26 +9,17 @@ services:
       - .env
     depends_on:
       - db
-    networks:
-      - app-network
 
   db:
-    image: mysql:8.0
+    image: postgres:15
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: entorno_ia
-      MYSQL_USER: usuario
-      MYSQL_PASSWORD: password
+      POSTGRES_DB: entorno_ia
+      POSTGRES_USER: usuario
+      POSTGRES_PASSWORD: password
     ports:
-      - "3306:3306"
+      - "5432:5432"
     volumes:
-      - mysql_data:/var/lib/mysql
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
+      - pg_data:/var/lib/postgresql/data
 
 volumes:
-  mysql_data:
+  pg_data:
