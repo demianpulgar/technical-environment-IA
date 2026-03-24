@@ -2,10 +2,16 @@
 
 > **Entorno técnico completo de Python para Datos e Inteligencia Artificial**, desplegado como Web Service en [Render](https://render.com) con base de datos PostgreSQL administrada, desarrollado en Visual Studio Code y contenedorizado con Docker.
 
+[![API Status](https://img.shields.io/badge/API-Live-brightgreen)](https://technical-environment-ia.onrender.com/) [![DB Health](https://img.shields.io/badge/DB%20Health-Check-blue)](https://technical-environment-ia.onrender.com/health/db) [![Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7)](https://render.com)
+
+🌐 **Producción:** [`https://technical-environment-ia.onrender.com`](https://technical-environment-ia.onrender.com)  
+🗄️ **Health DB:** [`https://technical-environment-ia.onrender.com/health/db`](https://technical-environment-ia.onrender.com/health/db)
+
 ---
 
 ## 📋 Tabla de Contenidos
 
+- [🌐 Demo en Producción](#-demo-en-producción)
 - [Descripción General](#-descripción-general)
 - [Stack Tecnológico](#-stack-tecnológico)
 - [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
@@ -16,6 +22,21 @@
 - [Ejecución Local con Docker](#-ejecución-local-con-docker)
 - [Despliegue en Render](#-despliegue-en-render)
 - [Solución de Problemas](#-solución-de-problemas)
+
+---
+
+## 🌐 Demo en Producción
+
+El proyecto está desplegado y accesible públicamente en Render:
+
+| Endpoint | URL | Descripción |
+|---|---|---|
+| **API Raíz** | [/](https://technical-environment-ia.onrender.com/) | Estado del servicio |
+| **Health DB** | [/health/db](https://technical-environment-ia.onrender.com/health/db) | Verificación de conexión a PostgreSQL |
+| **Swagger UI** | [/docs](https://technical-environment-ia.onrender.com/docs) | Documentación interactiva |
+| **ReDoc** | [/redoc](https://technical-environment-ia.onrender.com/redoc) | Documentación alternativa |
+
+> 💡 El servicio está alojado en el plan gratuito de Render. Si lleva tiempo inactivo puede tardar ~30 segundos en despertar en la primera petición.
 
 ---
 
